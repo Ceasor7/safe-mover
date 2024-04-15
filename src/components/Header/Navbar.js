@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex flex-row sm:gap-x-20 sm:my-4 h-14 max-w-screen-2xl items-center sm:justify-center">
           <div>
             <img
-              src="safe-movers-logo-1.png"
+              src="/safe-movers-logo-1.png"
               className="h-12 w-32 sm:h-auto sm:w-auto"
               alt="Safe Movers Logo"
             />
@@ -80,7 +80,7 @@ const Navbar = () => {
             Storage Services
           </Link>
           <Link
-            href="#"
+            href="/services"
             className="hover:text-[#00008B] hover:border-b-2 hover:mt-1 hover:border-[#00008B]"
           >
             Other Services
