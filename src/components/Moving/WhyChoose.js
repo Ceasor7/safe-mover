@@ -1,11 +1,11 @@
 const WhyChoose = () => {
   return (
-    <section className="bg-gray-100 text-black">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="bg-[#DD6001] py-12">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 text-white">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">Why Choose Us</h2>
+          <h2 className="text-5xl font-bold text-white pb-6">Why Choose Us</h2>
 
-          <p className="mt-4">
+          <p className="mt-4 text-white">
             Experience the delight of having breakfast at your old house, and by
             evening, enjoying dinner with feet up at your new house, all without
             breaking a sweat!
@@ -14,9 +14,11 @@ const WhyChoose = () => {
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a
-            className="block rounded-xl border bg-white border-gray-800 p-8 shadow-xl transition hover:border-[#00008b]/10 hover:shadow-[#00008b]/10"
+            className="block rounded-xl border-2 p-8 shadow-xl transition hover:border-[#00008b]/10 hover:shadow-[#00008b]/10"
             href="#"
           >
+
+            {/* Change img to svg and apply white */}
             <img
               src="/global-search.svg"
               alt="worldwide-world."

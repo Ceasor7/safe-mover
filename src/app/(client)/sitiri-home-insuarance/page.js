@@ -74,7 +74,7 @@ const SitiriInsurance = () => {
             <h1 className="text-center text-xl font-bold">Covered by Sitiri</h1>
             <ul className="list-disc ml-6">
               <li>
-                Loss of Phones, laptops, tablets, jewelry, watches, or golf
+                Loss of Phones, laptops, tablets, jewellery, watches, or golf
                 equipment when outside your house/using them during the course
                 of work
               </li>

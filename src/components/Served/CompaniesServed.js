@@ -50,7 +50,7 @@ export default function CompaniesServed() {
   ];
   return (
     <div className="flex mt-5 mx-5 sm:mx-24 flex-col sm:flex-row">
-      <div className="sm:w-1/3 flex justify-center items-center text-center">
+      <div className="sm:w-1/3 flex justify-center items-center text-center py-6">
         <p>
           We have Served over
           <br />

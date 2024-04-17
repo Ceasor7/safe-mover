@@ -25,7 +25,7 @@ const ServicesSection = () => {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4">
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="#"
@@ -103,6 +103,26 @@ const ServicesSection = () => {
               </p>
             </a>
 
+            <a
+              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              href="#"
+            >
+              <span className="inline-block rounded-lg bg-gray-50 p-3">
+                <img
+                  src="/international.svg"
+                  alt="International relocation"
+                  className="h-6 w-6"
+                />{' '}
+              </span>
+
+              <h2 className="mt-2 font-bold">International Movers</h2>
+
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                With expertise in facilitating moves from Kenya to various
+                corners of the world, we offer a comprehensive suite of services
+                tailored to meet your specific needs.
+              </p>
+            </a>
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="#"
