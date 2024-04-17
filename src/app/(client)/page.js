@@ -7,6 +7,7 @@ import GetMoving from '@/components/Services/GetMoving';
 import Membership from '@/sections/Membership';
 import ServicesSection from '@/sections/ServicesSection';
 import { client } from '../../../sanity/lib/client';
+import Estimate from '@/components/Quote/Estimate';
 
 export async function getPosts() {
   const query = `
@@ -31,18 +32,21 @@ export const revalidate = 30;
 export default async function Home() {
   const posts = await getPosts();
   return (
-    <main className=" overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <section>
         <LandingSection />
       </section>
-      <section>
+      <section className='pb-24 px-6 md:px-12 w-full'>
+        <Estimate />
+      </section>
+      <section className='bg-black/5'>
         <ServicesSection />
       </section>
       <section>
         <ActualReviews />
       </section>
       <hr className="border-black mx-5 sm:mx-24" />
-      <section>
+      <section className='py-24'>
         <CompaniesServed />
       </section>
       <hr className="border-black mx-5 sm:mx-24" />
@@ -51,7 +55,7 @@ export default async function Home() {
       </section>
       <hr className="border-black mx-5 sm:mx-24" />
       <section>
-        <GetMoving />
+        {/* <GetMoving /> */}
       </section>
       <section>
         <Membership />
