@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <hr className="border-black mx-5 sm:mx-24" />
-        <GetQuote />
+        {/* <GetQuote /> */}
         <hr />
         <Footer />
       </body>

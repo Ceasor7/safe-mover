@@ -1,20 +1,32 @@
 'use client';
+import Estimate from '@/components/Quote/Estimate';
+import FAQs from '@/components/FAQs';
 import OtherServices from '@/components/Services/OtherServices';
 import YoutubeVideo from '@/components/Youtube/YoutubeVideo';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
 
 const AutoRelocationService = () => {
   return (
-    <div className="my-5  mx-auto max-w-5xl items-center">
-      <h1 className="text-4xl text-gray-400 font-bold mb-3">
-        Best Car Movers in Nairobi, Kenya
-      </h1>
-      <div className="flex flex-col sm:flex-row sm:gap-x-10">
+    <div className=" py-5 mx-auto items-center w-full">
+
+      {/* Title Section */}
+      <div
+        className='relative flex flex-wrap w-full h-72 px-12 justify-center items-center mx-auto mb-16'
+        style={{
+          backgroundImage: "url('/moving-new-house-stack-brown-cardboard-boxes-with-belongings-living-room-after-moving-day.jpeg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="text-center relative z-10">
+          <h1 className="text-4xl text-white font-bold mb-3">
+            Best Car Movers in Nairobi, Kenya
+          </h1>
+        </div>
+      </div>
+
+{/* Blog Content */}
+      <div className="flex flex-col sm:flex-row sm:gap-x-16 px-24 justify-center">
         <div className="sm:w-2/3 flex flex-col">
           <div>
             <img
@@ -74,43 +86,9 @@ const AutoRelocationService = () => {
               solutions for vehicle relocation.
             </p>
           </div>
-          <div className="my-7">
-            <h2 className="text-2xl font-bold">FAQs</h2>
-            <div>
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>
-                    Q: What safety measures are in place during vehicle
-                    transportation?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    A: We employ secure handling techniques and utilize
-                    specialized equipment to ensure the safety of vehicles
-                    during transportation. Additionally, our team conducts
-                    thorough inspections before and after transit to mitigate
-                    any potential risks.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-            <div>
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>
-                    Q: How are pricing and delivery times determined?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    A: Pricing depends on various factors, including distance,
-                    vehicle type, and specific client requirements. As for
-                    delivery times, we strive to meet agreed-upon schedules and
-                    communicate transparently with our clients throughout the
-                    process.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-          </div>
-          <div className="my-7">
+
+          <FAQs/>
+          {/* <div className="my-7">
             <h1 className="text-4xl mb-3 font-bold text-[#00008B]">
               Why choose SafeMovers Movers to Relocate your Vehicle?
             </h1>
@@ -155,7 +133,7 @@ const AutoRelocationService = () => {
               </h2>
               <p>
                 Safe Movers has established strong partnerships and a reliable
-                network that spans across Kenya, neighboring countries, and
+                network that spans across Kenya, neighbouring countries, and
                 international territories. These alliances enable us to
                 streamline logistics, ensuring efficient and timely deliveries
                 while navigating the complexities of various transportation
@@ -217,10 +195,15 @@ const AutoRelocationService = () => {
                 secure transportation experience from start to finish.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="sm:w-1/3 ">
+        <div className="">
           <OtherServices />
+          <Estimate
+            containerClass="mt-8 flex flex-col gap-4 text-left"
+            inputContainerClass="flex flex-col w-full"
+            inputClass=""
+          />
         </div>
       </div>
     </div>

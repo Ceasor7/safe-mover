@@ -3,8 +3,8 @@ import Link from 'next/link';
 const OtherServices = () => {
   return (
     <div className="flex-col hidden sm:inline-flex justify-center ">
-      <p className="text-center font-bold text-lg">Other Services</p>
-      <div className=" text-center shadow-xl bg-gray-100">
+      <p className="text-center font-bold text-2xl">Other Services</p>
+      <div className="p-4 text-center shadow-xl bg-gray-100 mt-6">
         <div className="py-3">
           <Link href="/residential" className="hover:text-[#00008B]">
             Residential House Movers

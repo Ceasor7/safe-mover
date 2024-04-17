@@ -45,23 +45,20 @@ export default async function Home() {
       <section>
         <ActualReviews />
       </section>
-      <hr className="border-black mx-5 sm:mx-24" />
       <section className='py-24'>
         <CompaniesServed />
       </section>
-      <hr className="border-black mx-5 sm:mx-24" />
       <section>
         <WhyChoose />
       </section>
-      <hr className="border-black mx-5 sm:mx-24" />
       <section>
         {/* <GetMoving /> */}
       </section>
       <section>
         <Membership />
       </section>
-      <section>
-        <div className="container  mx-auto max-w-5xl py-6 lg:py-10">
+      <section className='bg-black/5 py-12'>
+        <div className="container mx-auto max-w-5xl py-6 lg:py-10">
           <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
             <div className="flex-1 space-y-4">
               <h1 className="inline-block font-black text-4xl lg:text-5xl">
@@ -74,7 +71,19 @@ export default async function Home() {
           </div>
           <div className="grid grid-cols-1 py-6 sm:gap-x-10 gap-y-7 sm:grid-cols-2">
             {posts?.length > 0 &&
-              posts?.map((post) => <PostCard key={post?._id} post={post} />)}
+              posts?.map((post) => (
+                <div key={post?._id} className="flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
+                  <img src={post.image} alt={post.title} className="h-48 w-full object-cover" />
+                  <div className="p-6">
+                    <h2 className="text-xl font-semibold text-gray-800">{post.title}</h2>
+                    <p className="text-sm text-gray-600 mt-2">{post.description}</p>
+                    <div className="mt-4 flex justify-between items-center">
+                      <span className="text-xs text-gray-500">{post.date}</span>
+                      <a href="#" className="text-blue-600 hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </section>
