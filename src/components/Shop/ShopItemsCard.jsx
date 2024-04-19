@@ -1,3 +1,12 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+
 const ShopItemsCard = ({
   image,
   title,
@@ -13,26 +22,31 @@ const ShopItemsCard = ({
   purpose5,
 }) => {
   return (
-    <div className="border border-black rounded-md shadow-md items-center">
-      <img
-        src={image}
-        alt="product image"
-        className="w-auto h-auto rounded-2xl"
-      />
-      <h1 className="bg-[#00008B] text-white text-center py-4 font-bold">
-        {title}
-      </h1>
-      <p className="text-2xl text-gray-700 mb-3 my-3 mx-7">{price}</p>
-      <p className="mx-7 mb-3">{size}</p>
-      <p className="mx-7 mb-3">{material}</p>
-      <p className="mx-7 mb-3">{weight}</p>
-      <p className="mx-7 mb-3">{ideal}</p>
-      <p className="ml-10 mr-6 mb-3">{purpose1}</p>
-      <p className="ml-10 mr-6 mb-3">{purpose2}</p>
-      <p className="ml-10 mr-6 mb-3">{purpose3}</p>
-      <p className="ml-10 mr-6 mb-3">{purpose4}</p>
-      <p className="ml-10 mr-6 mb-3">{purpose5}</p>
-    </div>
+    <Card>
+      <CardHeader>
+        <img
+          src={image}
+          alt="product image"
+          className="w-auto h-auto rounded-2xl"
+        />
+        <CardTitle> {title}</CardTitle>
+        <CardDescription>{price}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>{size}</p>
+        <p>{material}</p>
+        <p>{weight}</p>
+        <p>{ideal}</p>
+        <ul className=" list-disc ml-4">
+          <li>{purpose1}</li>
+          <li>{purpose2}</li>
+          <li>{purpose3}</li>
+          <li>{purpose4}</li>
+          <li>{purpose5}</li>
+        </ul>
+      </CardContent>
+      <CardFooter></CardFooter>
+    </Card>
   );
 };
 

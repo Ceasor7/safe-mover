@@ -25,7 +25,12 @@ const shopCards = [
       'Ideal for moving, shipping, or storing large, lightweight bulky items.',
     purpose2:
       'Perfect for packing folded clothes, curtains, linen, portraits, picture frames, and electronic appliances.',
-    purpose3: 'Recyclable',
+    purpose3:
+      ' Large boxes can be used to organize lightweight items from various rooms. For example, you can use them to pack up miscellaneous items from closets, shelves, or cabinets. ',
+    purpose4:
+      'Large boxes can be used to consolidate items from multiple smaller boxes, optimizing space in the moving truck and saving time and effort during the moving process.',
+    purpose5:
+      ' Large boxes provide the flexibility to accommodate these irregularly shaped items, ensuring they are securely packed and transported without damage.',
   },
   {
     image: '/medium-boxes.webp',
@@ -35,7 +40,14 @@ const shopCards = [
     ideal: 'Ideal for :',
     purpose1:
       'Our Small Moving Boxes are ideal for moving, shipping, or storing dense, heavy yet fragile items such as books, kitchenware, linen, foodstuff, and small appliances.',
-    purpose2: 'Recyclable',
+    purpose2:
+      'Medium boxes can be designated for miscellaneous items from different rooms, such as books, small appliances, or decorative items.',
+    purpose3:
+      'Items that are neither too large nor too small, like kitchen appliances (mixers, blenders) or home decor (vases, picture frames), fit well in medium boxes.',
+    purpose4:
+      'Medium boxes are suitable for packing clothing, linens, and bedding. ',
+    purpose5:
+      'Medium boxes can be used to create "essentials" boxes containing everyday items you will need immediately upon arrival at your new home.',
   },
   {
     image: '/laying-boxes.jpg',
@@ -45,9 +57,14 @@ const shopCards = [
     ideal: 'Ideal for :',
     purpose1:
       'Our sleeping boxes are perfect for storing and moving trench coats, pants, gowns, and heavy-duty garments.',
-    purpose2: 'Ideal storage solution for seasonal items.',
-    purpose3: 'The best option for air shipping.',
-    purpose4: 'Recyclable',
+    purpose2:
+      'Delicate or breakable items such as glassware, ceramics, or electronics can be securely packed within Sleeping/Laying Boxes. ',
+    purpose3:
+      'Utilizing Sleeping/Laying Boxes for linens and bedding streamlines the packing process and ensures these essentials remain clean and easily accessible upon arrival at the new destination..',
+    purpose4:
+      'In situations where immediate bedding is needed upon arrival at the new location, Sleeping/Laying Boxes can serve as makeshift sleeping quarters. ',
+    purpose5:
+      'When disassembling furniture or handling large, unwieldy items such as mattresses or mirrors, Sleeping/Laying Boxes provide a convenient solution. ',
   },
   {
     image: '/wrap2.webp',
@@ -56,6 +73,14 @@ const shopCards = [
     ideal: 'Ideal for :',
     purpose1:
       'wrapping fragile items like paintings, glass, picture frames, china ware, etc. that are meant for transportation or short-term and long-term storage.',
+    purpose2:
+      'When packing boxes for moving, its important to fill any empty spaces to prevent items from shifting around during transit.',
+    purpose3:
+      ' Bubble Wrap can also be used to protect the legs and edges of furniture pieces from scratches, dings, and other damage.',
+    purpose4:
+      ' For items that are sensitive to temperature fluctuations, such as certain types of artwork or electronics, Bubble Wrap can provide a layer of insulation.',
+    purpose5:
+      ' For particularly valuable or sentimental items, such as heirlooms or antiques, Bubble Wrap can be used to create a thick protective layer.',
   },
   {
     image: '/packing-tape.png',
@@ -64,6 +89,14 @@ const shopCards = [
     ideal: 'Ideal for :',
     purpose1:
       'Very strong adhesive and water resistant. Ideal for sealing carton boxes either meant for storage, transportation and export.',
+    purpose2:
+      'You can use packing tape to affix labels onto boxes, indicating their contents or destination room.',
+    purpose3:
+      'acking tape can be used to reinforce the bottoms and sides of boxes, especially for heavy items. ',
+    purpose4:
+      'When moving smaller items or items that belong together, packing tape can be used to bundle them together.',
+    purpose5:
+      'In case of minor damage to boxes or furniture during the moving process, packing tape can serve as a temporary fix.',
   },
   {
     image: '/shrink-wrap.webp',
@@ -76,6 +109,12 @@ const shopCards = [
       'Shrink wrap is a weather-proof material used to protect furniture, appliances, and other household goods from damage from dust, moisture, or dirt when moving. Transparent shrink wrap also affords you a way to easily identify the contents of a package.',
     purpose2:
       'It provides efficient handling for large or bulky items, providing a better grip for the movers, thus preventing accidents or injuries.',
+    purpose3:
+      'Shrink wrap can be used to bundle items together, such as a set of chairs or a stack of boxes. ',
+    purpose4:
+      ' If you are moving in inclement weather or transporting items in an open truck or trailer, shrink wrap can provide an additional layer of protection against moisture, rain, and wind.',
+    purpose5:
+      ' When using moving blankets to protect fragile items or furniture, shrink wrap can be used to secure the blankets in place. ',
   },
 ];
 

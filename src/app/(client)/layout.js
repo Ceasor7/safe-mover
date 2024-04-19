@@ -1,6 +1,5 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Header/Navbar';
-import GetQuote from '@/components/Quote/GetQuote';
 import { cn } from '@/lib/utils';
 import { Inter } from 'next/font/google';
 import siteConfig from '../../../config/site';
@@ -27,9 +26,6 @@ export default function RootLayout({ children }) {
         <div className="relative flex min-h-dvh flex-col bg-background">
           <main className=" flex-1">{children}</main>
         </div>
-
-        <hr className="border-black mx-5 sm:mx-24" />
-        <GetQuote />
         <hr />
         <Footer />
       </body>
