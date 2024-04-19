@@ -1,3 +1,5 @@
+import MVC from './MVC';
+
 const OurMission = () => {
   return (
     <section>
@@ -12,16 +14,7 @@ const OurMission = () => {
           </div>
 
           <div className="lg:py-24">
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Our Mission, Vision and Core Values
-            </h2>
-
-            <p className="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
-              hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
-              minus veniam tempora deserunt? Molestiae eius quidem quam
-              repellat.
-            </p>
+            <MVC />
           </div>
         </div>
       </div>

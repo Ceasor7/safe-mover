@@ -2,7 +2,6 @@ const OurStory = () => {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div>
-        <h2>Our Story</h2>
         <div className=" flex flex-row sm:gap-x-10 gap-y-9">
           <div>
             <iframe
@@ -16,16 +15,15 @@ const OurStory = () => {
               allowfullscreen
             ></iframe>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Our Mission, Vision and Core Values
-            </h2>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-3xl font-bold sm:text-4xl">Our Story</h2>
 
-            <p className="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
-              hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
-              minus veniam tempora deserunt? Molestiae eius quidem quam
-              repellat.
+            <p className="mt-4">
+              Moving is a complex task requiring physical strength and a sound
+              mind. At SafeMovers, we recognize the importance of people. We
+              create a positive atmosphere, defining a mover as a multi-skilled
+              professional adept at packing, handling, transportation, and
+              setup.
             </p>
           </div>
         </div>
